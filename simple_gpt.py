@@ -27,3 +27,10 @@ def gpt(text):
     response = requests.post(url, headers=headers, json=prompt)
     result = response.json().get('result')
     return result['alternatives'][0]['message']['text']
+
+
+@bot.event
+async def on_message(message):
+    if AI == True:
+        await message.channel.send(gpt(message.content))
+    await bot.process_commands(message)
