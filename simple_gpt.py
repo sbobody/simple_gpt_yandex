@@ -29,8 +29,4 @@ def gpt(text):
     return result['alternatives'][0]['message']['text']
 
 
-@bot.event
-async def on_message(message):
-    if AI == True:
-        await message.channel.send(gpt(message.content))
-    await bot.process_commands(message)
+print(gpt("тут запрос для gpt"))
