@@ -3,7 +3,7 @@ import requests
 
 def gpt(text):
     prompt = {
-        "modelUri": "gpt://b1ghnehmnn3n3dvbqi90/yandexgpt",
+        "modelUri": "gpt://---/yandexgpt",
         "completionOptions": {
             "stream": False,
             "temperature": 0.6,
@@ -21,7 +21,7 @@ def gpt(text):
     url = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Api-Key AQVNz9XUQGq4KhejXKZ-8PLoDVwLZrPGARRazGnK"
+        "Authorization": "Api-Key---"
     }
     
     response = requests.post(url, headers=headers, json=prompt)
