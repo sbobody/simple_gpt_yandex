@@ -12,7 +12,7 @@ def gpt(text):
         "messages": [
             {
                 "role": "assistant",
-                "text": f'{text}'
+                "text": f' "{text}"'
             }
         ]
     }

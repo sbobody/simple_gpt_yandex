@@ -6,6 +6,7 @@ from simple_gpt import gpt
 bot = discord.Client(intents=discord.Intents.all())
 
 
+
 def gen_pass(pass_length):
     elements = "+-/*!&$#?=@<>qwertyuiop[]asdfghjkl;'zxcvbnm,./QWERTYUIOP[ASDFGHJKL;ZXCVBNM,./]"
     password = ""
